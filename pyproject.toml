@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "perturbator"
-version = "0.1.0"
+version = "0.1.1"
 description = "Tool to apply change patterns on Business Process Models"
 license = "MIT"
 authors = ["Zohaib Ahmed Butt <zohaibahmedbutt@gmail.com>"]
