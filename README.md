@@ -4,19 +4,14 @@ Tool to apply change patterns to your Business Process Models
 
 ## Dependencies:
 `python3`
-`poetry`
-`click`
-`shortuuid`
-`textx`
+`pip3`
 
 ## Setup
-`poetry install`
-
-`poetry run perturbator`
+`pip3 install perturbator`
 
 ## Insert Element
 ### Documentation
-`poetry run perturbator insert-element --help`
+`perturbator insert-element --help`
 
 ### Options:
 
@@ -29,12 +24,12 @@ Tool to apply change patterns to your Business Process Models
   `--insert-at`     ID of the FLOW where the process has to be inserted     [required]
 
 ### Sample Command:
-`poetry run perturbator insert-element --insert-to ~/Desktop/input1.bpmn --element-type task --insert-at flow11  --output-file ~/Desktop/output.bpmn`
+`perturbator insert-element --insert-to ~/Desktop/input1.bpmn --element-type task --insert-at flow11  --output-file ~/Desktop/output.bpmn`
 
 
 ## Delete/Skip Element
 ### Documentation
-`poetry run perturbator delete-element --help`
+`perturbator delete-element --help`
 
 ### Options:
 
@@ -45,12 +40,12 @@ Tool to apply change patterns to your Business Process Models
   `--output-file`   Path of BPMN file in which to output                    [required]
 
 ### Sample Command:
-`poetry run perturbator delete-element --delete-from ~/Desktop/input1.bpmn --element-id task11 --output-file ~/Desktop/output.bpmn`
+`perturbator delete-element --delete-from ~/Desktop/input1.bpmn --element-id task11 --output-file ~/Desktop/output.bpmn`
 
 
 ## Insert Process Fragment (Serial)
 ### Documentation
-`poetry run perturbator insert-process-fragment-serial --help`
+`perturbator insert-process-fragment-serial --help`
 
 ### Options:
 
@@ -63,12 +58,12 @@ Tool to apply change patterns to your Business Process Models
   `--insert-at`     ID of the FLOW where the process has to be inserted     [required]
 
 ### Sample Command:
-`poetry run perturbator insert-process-fragment-serial --insert-to ~/Desktop/input1.bpmn --insert-at flow12 --insert-from ~/Desktop/input2.bpmn --output-file ~/Desktop/output.bpmn `
+`perturbator insert-process-fragment-serial --insert-to ~/Desktop/input1.bpmn --insert-at flow12 --insert-from ~/Desktop/input2.bpmn --output-file ~/Desktop/output.bpmn `
 
 
 ## Insert Process Fragment (Parallel Branch)
 ### Documentation
-`poetry run perturbator insert-process-fragment-parallel --help`
+`perturbator insert-process-fragment-parallel --help`
 
 ### Options:
 
@@ -83,12 +78,12 @@ Tool to apply change patterns to your Business Process Models
   `--branch-end`    ID of the FLOW where the branching starts               [required]
 
 ### Sample Command:
-`poetry run perturbator insert-process-fragment-parallel --insert-to ~/Desktop/input1.bpmn --insert-from ~/Desktop/input2.bpmn --output-file ~/Desktop/output.bpmn --branch-start flow11 --branch-end flow13`
+`perturbator insert-process-fragment-parallel --insert-to ~/Desktop/input1.bpmn --insert-from ~/Desktop/input2.bpmn --output-file ~/Desktop/output.bpmn --branch-start flow11 --branch-end flow13`
 
 
 ## Insert Process Fragment (Conditional Branch)
 ### Documentation
-`poetry run perturbator insert-process-fragment-conditional --help`
+`perturbator insert-process-fragment-conditional --help`
 
 ### Options:
 
@@ -103,12 +98,12 @@ Tool to apply change patterns to your Business Process Models
   `--branch-end`    ID of the FLOW where the branching starts               [required]
 
 ### Sample Command:
-`poetry run perturbator insert-process-fragment-conditional --insert-to ~/Desktop/input1.bpmn --insert-from ~/Desktop/input2.bpmn --output-file ~/Desktop/output.bpmn --branch-start flow11 --branch-end flow13`
+`perturbator insert-process-fragment-conditional --insert-to ~/Desktop/input1.bpmn --insert-from ~/Desktop/input2.bpmn --output-file ~/Desktop/output.bpmn --branch-start flow11 --branch-end flow13`
 
 
 ## Delete/Skip Process Fragment
 ### Documentation
-`poetry run perturbator delete-process-fragment --help`
+`perturbator delete-process-fragment --help`
 
 ### Options:
 
@@ -121,13 +116,13 @@ Tool to apply change patterns to your Business Process Models
   `--branch-end`    ID of the FLOW where the branching starts                       [required]
 
 ### Sample Command:
-`poetry run perturbator delete-process-fragment --delete-from ~/Desktop/input1.bpmn  --output-file ~/Desktop/output.bpmn --branch-start flow11 --branch-end flow13`
+`perturbator delete-process-fragment --delete-from ~/Desktop/input1.bpmn  --output-file ~/Desktop/output.bpmn --branch-start flow11 --branch-end flow13`
 
 ## Run commands in batches
 Add commands in a text format in any text file and execute to trigger multiple steps in one go
 
 ### Sample Command:
-`poetry run perturbator execute-from-file --command-file ~/Desktop/commands.txt`
+`perturbator execute-from-file --command-file ~/Desktop/commands.txt`
 
 ### Format of commands in file:
 
