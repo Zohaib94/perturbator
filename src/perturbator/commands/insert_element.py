@@ -1,5 +1,5 @@
 import click
-from src.perturbator.support_modules.perturbator import add_new_element_to_flow, validate_flow_presence_in_file
+from ..support_modules.perturbator import add_new_element_to_flow, validate_flow_presence_in_file
 
 @click.command()
 @click.option('--insert-to', required=True, type=click.Path(exists=True, dir_okay=False, resolve_path=True),

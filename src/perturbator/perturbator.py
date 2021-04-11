@@ -1,6 +1,6 @@
 import click
 
-from src.perturbator.commands import generate_new_element, insert_process_fragment_serial, \
+from .commands import generate_new_element, insert_process_fragment_serial, \
     insert_process_fragment_conditional, insert_process_fragment_parallel, delete_process_fragment, insert_element, \
     delete_element, execute_from_file
 

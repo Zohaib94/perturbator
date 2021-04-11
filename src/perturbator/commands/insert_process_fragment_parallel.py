@@ -1,5 +1,5 @@
 import click
-from src.perturbator.support_modules.perturbator import branch_insert_process, validate_flow_presence_in_file
+from ..support_modules.perturbator import branch_insert_process, validate_flow_presence_in_file
 
 
 @click.command()

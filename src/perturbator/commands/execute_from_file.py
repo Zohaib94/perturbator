@@ -1,13 +1,13 @@
 import click
-from src.perturbator.language_parser import language_model_generator
+from ..language_parser import language_model_generator
 from os.path import expanduser
 
-from src.perturbator.commands.insert_element import insert_element
-from src.perturbator.commands.delete_element import delete_element
-from src.perturbator.commands.insert_process_fragment_serial import insert_process_fragment_serial
-from src.perturbator.commands.insert_process_fragment_parallel import insert_process_fragment_parallel
-from src.perturbator.commands.insert_process_fragment_conditional import insert_process_fragment_conditional
-from src.perturbator.commands.delete_process_fragment import delete_process_fragment
+from .insert_element import insert_element
+from .delete_element import delete_element
+from .insert_process_fragment_serial import insert_process_fragment_serial
+from .insert_process_fragment_parallel import insert_process_fragment_parallel
+from .insert_process_fragment_conditional import insert_process_fragment_conditional
+from .delete_process_fragment import delete_process_fragment
 
 
 def cname(o):

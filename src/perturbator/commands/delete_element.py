@@ -1,6 +1,6 @@
 import click
 
-from src.perturbator.support_modules.perturbator import skip_element
+from ..support_modules.perturbator import skip_element
 
 
 @click.command()
