@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "perturbator"
-version = "0.1.22"
+version = "0.1.23"
 description = "Tool to apply change patterns on Business Process Models"
 license = "MIT"
 authors = ["Zohaib Ahmed Butt <zohaibahmedbutt@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "3.8"
 arrow = "^1.0.3"
 click = "^7.1.2"
 shortuuid = "^1.0.1"

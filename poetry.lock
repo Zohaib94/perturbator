@@ -180,8 +180,8 @@ python-versions = "*"
 
 [metadata]
 lock-version = "1.1"
-python-versions = "^3.8"
-content-hash = "129664ca9c1d34a01c32fb4a0d59c0c210b1b2c277f8840f26d68284e8ede007"
+python-versions = "3.8"
+content-hash = "a1d2f480f9b5c44f1e43cfdaae0ea695a8eb9dd46f44160a97354f94bcd90f70"
 
 [metadata.files]
 arpeggio = [

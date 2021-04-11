@@ -3,11 +3,11 @@
 Tool to apply change patterns to your Business Process Models
 
 ## Dependencies:
-`python3`
+`python3` (Do not use above 3.8)
 `pip3`
 
 ## Setup
-`pip3 install perturbator`
+`python3 -m pip install perturbator`
 
 ## Insert Element
 ### Documentation
