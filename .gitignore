@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+src/perturbator/.DS_Store
+src/.DS_Store
+src/perturbator/__pycache__/
+src/perturbator/commands/__pycache__/
+src/perturbator/support_modules/__pycache__/
+src/perturbator/language_parser/__pycache__/
