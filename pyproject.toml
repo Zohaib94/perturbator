@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Tool to apply change patterns on Business Process Models"
 license = "MIT"
 authors = ["Zohaib Ahmed Butt <zohaibahmedbutt@gmail.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
