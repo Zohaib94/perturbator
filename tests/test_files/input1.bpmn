@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_05j5hnm" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.5.0">
+  <bpmn:process id="Process_1elnczg" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>flow11</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="task11">
+      <bpmn:incoming>flow11</bpmn:incoming>
+      <bpmn:outgoing>flow12</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="task12">
+      <bpmn:incoming>flow12</bpmn:incoming>
+      <bpmn:outgoing>flow13</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="Event_0gckvrh">
+      <bpmn:incoming>flow13</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow11" sourceRef="StartEvent_1" targetRef="task11" />
+    <bpmn:sequenceFlow id="flow12" sourceRef="task11" targetRef="task12" />
+    <bpmn:sequenceFlow id="flow13" sourceRef="task12" targetRef="Event_0gckvrh" />
+  </bpmn:process>
+</bpmn:definitions>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='us-ascii'?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" id="Definitions_05j5hnm" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.5.0">
+  <bpmn:process id="Process_1elnczg" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>flow11</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="task11">
+      <bpmn:outgoing>flow12</bpmn:outgoing>
+    <bpmn:incoming>Flow_5P8uPJ9nSgBEB8PNNJQL3J</bpmn:incoming></bpmn:task>
+    <bpmn:task id="task12">
+      <bpmn:outgoing>flow13</bpmn:outgoing>
+    <bpmn:incoming>Flow_EXdZym9oUkuJfGLrRzs7UB</bpmn:incoming></bpmn:task>
+    <bpmn:endEvent id="Event_0gckvrh">
+      <bpmn:incoming>Flow_FyxfiALg8FZbPZPWBh7chi</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow12" sourceRef="task11" targetRef="gateway_mjSZYkz6NouDKL2fNQhZqX" />
+    <bpmn:sequenceFlow id="flow13" sourceRef="task12" targetRef="gateway_dgStA6pkdcbmZtp3Mu6NLe" />
+  <bpmn:sequenceFlow id="flow11" sourceRef="StartEvent_1" targetRef="task_R59TNXixCZynEZEFopou8J" /><bpmn:sequenceFlow id="Flow_5P8uPJ9nSgBEB8PNNJQL3J" sourceRef="task_R59TNXixCZynEZEFopou8J" targetRef="task11" /><bpmn:task id="task_R59TNXixCZynEZEFopou8J"><bpmn:incoming>flow11</bpmn:incoming><bpmn:outgoing>Flow_5P8uPJ9nSgBEB8PNNJQL3J</bpmn:outgoing></bpmn:task><bpmn:sequenceFlow id="Flow_EXdZym9oUkuJfGLrRzs7UB" sourceRef="gateway_mjSZYkz6NouDKL2fNQhZqX" targetRef="task12" /><bpmn:exclusiveGateway id="gateway_mjSZYkz6NouDKL2fNQhZqX"><bpmn:incoming>flow12</bpmn:incoming><bpmn:outgoing>Flow_EXdZym9oUkuJfGLrRzs7UB</bpmn:outgoing><bpmn:outgoing>Flow_6gUCacoCNAuKCVUgHN4szE</bpmn:outgoing></bpmn:exclusiveGateway><bpmn:sequenceFlow id="Flow_FyxfiALg8FZbPZPWBh7chi" sourceRef="gateway_dgStA6pkdcbmZtp3Mu6NLe" targetRef="Event_0gckvrh" /><bpmn:exclusiveGateway id="gateway_dgStA6pkdcbmZtp3Mu6NLe"><bpmn:incoming>flow13</bpmn:incoming><bpmn:outgoing>Flow_FyxfiALg8FZbPZPWBh7chi</bpmn:outgoing><bpmn:incoming>Flow_6gUCacoCNAuKCVUgHN4szE</bpmn:incoming></bpmn:exclusiveGateway><bpmn:sequenceFlow id="Flow_6gUCacoCNAuKCVUgHN4szE" sourceRef="gateway_mjSZYkz6NouDKL2fNQhZqX" targetRef="gateway_dgStA6pkdcbmZtp3Mu6NLe" /></bpmn:process>
+</bpmn:definitions>

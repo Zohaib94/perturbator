@@ -697,3 +697,40 @@ def validate_flow_presence_in_file(file, flow_id):
     process_root = root.find("xmlns:process", bpmn_element_ns);
 
     return validate_flow_presence(process_root, flow_id);
+
+
+def get_process_root_from(file):
+    tree = parse_bpmn_from(file)
+    root = tree.getroot()
+
+    return root.find("xmlns:process", bpmn_element_ns);
+
+
+def count_tasks_in(file):
+    task_count = 0
+    process_root = get_process_root_from(file)
+
+    for task in process_root.findall("xmlns:task", bpmn_element_ns):
+        task_count = task_count + 1
+
+    return task_count
+
+
+def count_sequence_flows_in(file):
+    sequence_flow_count = 0
+    process_root = get_process_root_from(file)
+
+    for sequence_flow in process_root.findall("xmlns:sequenceFlow", bpmn_element_ns):
+        sequence_flow_count = sequence_flow_count + 1
+
+    return sequence_flow_count
+
+
+def count_exclusive_gateways_in(file):
+    gateway_count = 0
+    process_root = get_process_root_from(file)
+
+    for exclusive_gateway in process_root.findall("xmlns:exclusiveGateway", bpmn_element_ns):
+        gateway_count = gateway_count + 1
+
+    return gateway_count

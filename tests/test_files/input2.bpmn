@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Definitions_1j9bsfe" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="4.5.0">
+  <bpmn:process id="Process_1y236q2" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>flow21</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="task21">
+      <bpmn:incoming>flow21</bpmn:incoming>
+      <bpmn:outgoing>flow22</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="Event_0ypvuj0">
+      <bpmn:incoming>flow22</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="flow22" sourceRef="task21" targetRef="Event_0ypvuj0" />
+    <bpmn:sequenceFlow id="flow21" sourceRef="StartEvent_1" targetRef="task21" />
+  </bpmn:process>
+</bpmn:definitions>
