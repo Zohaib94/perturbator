@@ -734,3 +734,13 @@ def count_exclusive_gateways_in(file):
         gateway_count = gateway_count + 1
 
     return gateway_count
+
+
+def count_parallel_gateways_in(file):
+    gateway_count = 0
+    process_root = get_process_root_from(file)
+
+    for parallel_gateway in process_root.findall("xmlns:parallelGateway", bpmn_element_ns):
+        gateway_count = gateway_count + 1
+
+    return gateway_count
